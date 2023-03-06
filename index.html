@@ -15,6 +15,13 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asul&family=Open+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
     <title>SheCodes Pop Star Challenge - Cressida Cox</title>
 
     <style>
@@ -24,13 +31,23 @@
         margin-top: 56px;
       }
 
+      h2 {
+        font-family: "Asul", sans-serif;
+        text-align: center;
+        padding: 0px 20px 10px;
+        margin-top: 5px;
+      }
+
       p {
         text-align: center;
         line-height: 1.5;
+        font-family: "Roboto", sans-serif;
+        font-size: 15px;
+        padding: 10px;
       }
 
-      .container {
-        margin: 0;
+      .col-md-8 {
+        padding: 0;
       }
 
       .navbar {
@@ -45,6 +62,80 @@
         width: 160px;
         padding-left: 10px;
       }
+
+      .collapse {
+        font-family: "Roboto", sans-serif;
+      }
+
+      .award {
+        font-family: "Asul", sans-serif;
+      }
+
+      .col-12 img {
+        justify-content: center;
+        margin: 140px 10px 0px;
+      }
+
+      .about-container {
+        background: white;
+        color: black;
+        padding: 30px;
+      }
+
+      .photos {
+        padding: 0px;
+      }
+
+      .discography {
+        margin-top: 30px;
+      }
+
+      .discography-row {
+padding: 10px;
+      }
+
+      .tour-dates {
+        background: white;
+        color: black;
+        padding-top: 20px;
+      }
+
+ .release-date-container {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.release-date-container:hover .image {
+  opacity: 0.3;
+}
+
+.release-date-container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #000;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 4px;
+}
 
       @media (max-width: 768px) {
       }
@@ -117,16 +208,14 @@
                 alt="Logo"
                 class="img-fluid"
               />
-            </div>
-            <div class="col-12">
-              <p>🏆 Multiple Award Winner 🏆</p>
+              <p class="award">🏆 Multiple Award Winner 🏆</p>
             </div>
           </div>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-md-8">
+        <div class="about-container col-md-8">
           <h2>ABOUT</h2>
           <p>
             The Las Vegas-based group had its genesis in Provo, Utah, where
@@ -140,7 +229,7 @@
             In 2011, hitmaking producer Alex Da Kid signed them to
             KIDinaKORNER/Interscope records and the band made their major-label
             debut with Continued Silence, a 2012 EP featuring the
-            double-platinum breakthrough single “It’s Time.” Prior to the
+            double-platinum breakthrough single “It's Time.” Prior to the
             Interscope deal, the Tolmans parted ways with the group and Daniel
             Platzman took over on drums.
           </p>
@@ -171,24 +260,70 @@
             Throughout Imagine Dragons' career they have received a Grammy
             Award, three American Music Awards, ten Billboard Music Awards,
             eight BMI Pop Music Awards, an Echo Award, a MTV Video Music Award,
-            five Teen Choice Awards and a World Music Award
+            five Teen Choice Awards and a World Music Award.
           </p>
         </div>
-        <div class="col-md-4">
+        <div class="photos col-md-4 d-none d-md-block">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/070/126/original/IMG_0252.jpeg?1678024141"
+            alt="Concert"
+            class="img-fluid"
+          />
+
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/070/018/original/IMG_0254.jpeg?1677952448"
+            alt="The Band"
+            class="img-fluid"
+          />
+
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/070/127/original/IMG_0251.jpeg?1678024152"
             alt="The Band"
             class="img-fluid"
           />
         </div>
       </div>
 
-      <div class="row">
+      <div class="discography row">
         <h2>DISCOGRAPHY</h2>
       </div>
 
+    <div class="discography-container">
+      <div class="discography-row row">
+        <div class="release-date-container col-sm-4 ">
+
+  <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/070/259/original/night_vision.jpg?1678111620" alt="Night Visions" class="image img-fluid border" />
+  <div class="middle">
+    <div class="text">Released 2012</div>
+  </div>
+
+           </div>
+
+        <div class="col-sm-4">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/070/255/original/smoke_and_mirrors.jpg?1678110765" alt="Smoke + Mirrors" class="img-fluid border" />
+        </div>
+        <div class="col-sm-4">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/070/258/original/evolve.jpg?1678111614" alt="Evolve" class="img-fluid border" />
+        </div>
+     </div>
+
+      <div class="discography-row row mb-4">
+        <div class="col-sm-4">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/070/254/original/origins.jpg?1678110758" alt="Origins" class="img-fluid border" />
+        </div>
+        <div class="col-sm-4">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/070/256/original/mercury_act_1.jpg?1678110770" alt="Mercury: Act 1" class="img-fluid border" />
+        </div>
+        <div class="col-sm-4">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/070/257/original/mercury_act_2.jpg?1678110775" alt="Mercury: Act 2" class="img-fluid border" />
+        </div>
+        </div>
+      </div>
+    </div>
+
       <div class="row"></div>
-      <div class="row">
+
+      <div class="tour-dates row">
         <h2>TOUR DATES</h2>
       </div>
     </div>
