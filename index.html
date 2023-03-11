@@ -145,11 +145,35 @@
         border-radius: 5px;
         border: solid 1px black;
         font-family: "Asul", sans-serif;
-        color: #fff;
         font-size: 18px;
       }
 
-      @media (max-width: 768px) {
+      .tour-dates a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      @media (max-width: 800px) {
+        .tour-dates {
+          width: auto;
+          margin: 12px;
+        }
+
+        .release-date-container {
+          margin: 10px 0;
+        }
+      }
+
+      @media (max-width: 1000px) {
+        .ipad-view-one {
+          display: none;
+        }
+      }
+
+      @media (max-width: 1200px) {
+        .ipad-view-two {
+          display: none;
+        }
       }
     </style>
   </head>
@@ -251,7 +275,7 @@
             Interscope deal, the Tolmans parted ways with the group and Daniel
             Platzman took over on drums.
           </p>
-          <p>
+          <p class="ipad-view-one">
             In 2012, Imagine Dragons found themselves on a skyward trajectory
             with the Continued Silence EP and their debut album, Night Visions,
             the latter of which debuted at the number two spot on the Billboard
@@ -261,7 +285,7 @@
             digital rock track in America. During 2013, two other hits followed:
             "Demons" in the U.S. and "On Top of the World" elsewhere.
           </p>
-          <p>
+          <p class="ipad-view-two">
             From there, Imagine Dragons went on to see their 2015 sophomore
             album Smoke + Mirrors debut at No. 1 on the Billboard 200. Released
             in June 2017, their third album EVOLVE was nominated for a Grammy
@@ -302,10 +326,9 @@
         </div>
       </div>
 
-      <div class="discography row" id="discography">
+      <div class="discography" id="discography">
         <h2>DISCOGRAPHY</h2>
       </div>
-
       <div class="discography-container">
         <div class="discography-row row">
           <div class="release-date-container col-sm-4">
@@ -368,9 +391,14 @@
 
       <div class="tour-dates row" id="tour">
         <h2>TOUR DATES</h2>
-        <div class="d-grid gap-2 col-6 mx-auto">
+        <div class="d-grid gap-2 col mx-auto">
           <button class="button">
-            Click here to join your fellow Firebreathers and watch them live
+            <a
+              href="https://www.imaginedragonsmusic.com/tour/#/"
+              target="_blank"
+            >
+              Click here to join your fellow Firebreathers and watch them live
+            </a>
           </button>
         </div>
       </div>
